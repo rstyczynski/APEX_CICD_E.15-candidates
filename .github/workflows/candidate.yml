@@ -1,0 +1,8 @@
+name: Disabled candidate execution sentinel
+on: workflow_dispatch
+permissions: {}
+jobs:
+  sentinel:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo 'Candidate-owned execution must remain disabled'
